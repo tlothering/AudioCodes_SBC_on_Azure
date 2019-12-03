@@ -9,6 +9,8 @@ Refer to [Phone System and Direct Routing](https://docs.microsoft.com/en-us/Micr
 
 This PowerShell script will deploy a single AudioCodes Session Border Controller with all required networking for the 2x Interfaces on Azure. It has several fields pre-populated for easy deployment and is recommeneded that this script be used to deploy Proof of Concept or testing environments only.
 
+Edit this script to suit your needs and Azure region deployment as the default is **southafricanorth**
+
 **Requirements:**
 
 Install the **AZ** PowerShell module before using this script;
