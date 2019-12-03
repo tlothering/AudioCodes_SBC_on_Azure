@@ -25,9 +25,9 @@ This .INI file contains the basics for configuring the AudioCodes Session Border
 
 - Row 213: Replace **SIP.TRUNK.IP.HERE** with the routable IP address of your SIP Trunk Provider
 
-- Row 277: Replace the **SBC.PSTN.IP.HERE** with the Public facing Internet IP Address for the PSTN network provided at the end of the PowerShell script*
+- Row 277: Replace the **SBC.PSTN.IP.HERE** with the Public facing Internet IP Address for the PSTN network provided at the end of the PowerShell script
 
-- Row 278: Replace the **SBC.TEAMS.IP.HERE** with the Public facing Internet IP Address for the TEAMS network provided at the end of the PowerShell script*
+- Row 278: Replace the **SBC.TEAMS.IP.HERE** with the Public facing Internet IP Address for the TEAMS network provided at the end of the PowerShell script
 
 ### Post Deployment Actions
 
