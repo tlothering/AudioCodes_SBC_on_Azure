@@ -13,7 +13,7 @@ Install the "AZ" PowerSehll module before using this script;
 
 Install-Module Az
 
-*** ***NOTE: Default password is "DirectRouting123!@#" and MUST BE CHANGED AS SOON AS POSSIBLE !!!
+***NOTE: Default password is "DirectRouting123!@#" and MUST BE CHANGED AS SOON AS POSSIBLE !!!
 
 ### Azure_AudioCodes_VE_SBC_Default_Config.ini
 
