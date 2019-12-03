@@ -1,23 +1,21 @@
 # Deploy an AudioCodes Session Border Controller on Azure
 Deployment repo for AudioCodes SBC deployed on Microsoft Azure
 
-v1.0
+## v1.0
 
-Azure_Create_1_ACvSBC - Az.ps1
+### Azure_Create_1_ACvSBC - Az.ps1
 
 This PowerShell script will deploy a single AudioCodes Session Border Controller with all required networking for the 2x Interfaces on Azure. It has several fields pre-populated for easy deployment and is recommeneded that this script be used to deploy Proof of Concept or testing environments only.
 
-Requirements:
+**Requirements:
 
 Install the "AZ" PowerSehll module before using this script;
 
 Install-Module Az
 
-NOTE: Default password is "DirectRouting123!@#" and MUST BE CHANGED AS SOON AS POSSIBLE !!!
+*** ***NOTE: Default password is "DirectRouting123!@#" and MUST BE CHANGED AS SOON AS POSSIBLE !!!
 
-
-
-Azure_AudioCodes_VE_SBC_Default_Config.ini
+### Azure_AudioCodes_VE_SBC_Default_Config.ini
 
 This .INI file contains the basics for configuring the AudioCodes Session Border Controller for Microsoft Teams Direct Routing. Download the .INI and edit the following changes:
 
