@@ -11,7 +11,7 @@ This PowerShell script will deploy a single AudioCodes Session Border Controller
 
 **Requirements:**
 
-Install the **AZ** PowerSehll module before using this script;
+Install the **AZ** PowerShell module before using this script;
 
 `Install-Module Az`
 
