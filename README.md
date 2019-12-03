@@ -13,7 +13,7 @@ This PowerShell script will deploy a single AudioCodes Session Border Controller
 
 Install the "AZ" PowerSehll module before using this script;
 
-Install-Module Az
+'Install-Module Az'
 
 > NOTE: Default password is **DirectRouting123!@#** and MUST BE CHANGED AS SOON AS POSSIBLE !!!
 
