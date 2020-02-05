@@ -23,7 +23,7 @@ Install the **AZ** PowerShell module before using this script;
 
 This .INI file contains the basics for configuring the AudioCodes Session Border Controller for Microsoft Teams Direct Routing. Download the .INI and edit the following changes:
 
-- Replace **SBC01.TEAMS.CONTOSO.COM**, **SBC02.TEAMS.CONTOSO.COM**, **SBC03.TEAMS.CONTOSO.COM** with your registered Public DNS A Record
+- Replace **SBC01.TEAMS.CONTOSO.COM** & **SBC02.TEAMS.CONTOSO.COM** with your registered Public DNS A Record
 
 - Row 213: Replace **SIP.TRUNK.IP.HERE** with the routable IP address of your SIP Trunk Provider
 
