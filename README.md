@@ -21,7 +21,11 @@ Install the **AZ** PowerShell module before using this script;
 
 ### Azure_AudioCodes_VE_SBC_Default_Config.ini
 
-This .INI file contains the basics for configuring the AudioCodes Session Border Controller for Microsoft Teams Direct Routing. Download the .INI and edit the following changes:
+This repo contains 2 .INI files
+- Standard Trunk: This INI can be used when you have a single Office 365 tenant or if you want to dedicate a SIP Port to every Office 365 tenant when deploying in a Multi-Tenant scenario
+- Derived Trunk: This INI is can be used by Telecommunication Providers / Voice Carriers to managed 1000's of Office 365 SIP Trunks with a simple deployment.
+
+The .INI files contain the basics for configuring the AudioCodes Session Border Controller for Microsoft Teams Direct Routing. Download the .INI and edit the following changes:
 
 - Replace **SBC01.TEAMS.CONTOSO.COM** & **SBC02.TEAMS.CONTOSO.COM** with your registered Public DNS A Record
 
