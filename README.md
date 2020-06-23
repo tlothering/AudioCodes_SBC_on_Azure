@@ -3,7 +3,7 @@ Deployment repo for AudioCodes SBC deployed on Microsoft Azure
 
 Refer to [Phone System and Direct Routing](https://docs.microsoft.com/en-us/MicrosoftTeams/direct-routing-landing-page) for detailed deployment information.
 
-## v1.0
+## v2.0
 
 ### Azure_Create_1_ACvSBC - Az.ps1
 
