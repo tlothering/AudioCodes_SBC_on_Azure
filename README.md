@@ -34,10 +34,6 @@ The .INI files contain the basics for configuring the AudioCodes Session Border 
 
 - Replace ***SIP.TRUNK.IP.HERE*** with the routable IP address of your SIP Trunk Provider
 
-- Replace the ***SBC.PSTN.IP.HERE*** with the Public facing Internet IP Address for the PSTN network provided at the end of the PowerShell script
-
-- Replace the ***SBC.TEAMS.IP.HERE*** with the Public facing Internet IP Address for the TEAMS network provided at the end of the PowerShell script
-
 ### Post Deployment Actions
 
 - Import you Public SSL Certificate, Trusted Root & Intermediate Certification Authorities for your Certificate and the Baltimore Certificate
