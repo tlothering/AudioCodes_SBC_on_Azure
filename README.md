@@ -23,17 +23,17 @@ Install the **AZ** PowerShell module before using this script;
 
 This repo contains 2 .INI files
 - Standard Trunk: This INI can be used when you have a single Office 365 tenant or if you want to dedicate a SIP Port to every Office 365 tenant when deploying in a Multi-Tenant scenario
-- Derived Trunk: This INI is can be used by Telecommunication Providers / Voice Carriers to managed 1000's of Office 365 SIP Trunks with a simple deployment.
+- Derived Trunk: This INI is can be used by Telecommunication Providers / Voice Carriers to manage 1000's of Office 365 SIP Trunks with a simple deployment.
 
 The .INI files contain the basics for configuring the AudioCodes Session Border Controller for Microsoft Teams Direct Routing. Download the .INI and edit the following changes:
 
 - Replace **SBC01.TEAMS.CONTOSO.COM** & **SBC02.TEAMS.CONTOSO.COM** with your registered Public DNS A Record
 
-- Row 213: Replace **SIP.TRUNK.IP.HERE** with the routable IP address of your SIP Trunk Provider
+- Replace **SIP.TRUNK.IP.HERE** with the routable IP address of your SIP Trunk Provider
 
-- Row 277: Replace the **SBC.PSTN.IP.HERE** with the Public facing Internet IP Address for the PSTN network provided at the end of the PowerShell script
+- Replace the **SBC.PSTN.IP.HERE** with the Public facing Internet IP Address for the PSTN network provided at the end of the PowerShell script
 
-- Row 278: Replace the **SBC.TEAMS.IP.HERE** with the Public facing Internet IP Address for the TEAMS network provided at the end of the PowerShell script
+- Replace the **SBC.TEAMS.IP.HERE** with the Public facing Internet IP Address for the TEAMS network provided at the end of the PowerShell script
 
 ### Post Deployment Actions
 
