@@ -11,7 +11,7 @@ This PowerShell script will deploy a single AudioCodes Session Border Controller
 
 Edit this script to suit your needs and Azure region deployment as the default is **southafricanorth**
 
-**Requirements:**
+** Script Requirements:**
 
 Install the **AZ** PowerShell module before using this script;
 
@@ -23,12 +23,11 @@ Install the **AZ** PowerShell module before using this script;
 
 This repo contains 2 .INI files
 - Standard Trunk: This INI can be used when you have a single Office 365 tenant or if you want to dedicate a SIP Port to every Office 365 tenant when deploying in a Multi-Tenant scenario
-- Derived Trunk: This INI is can be used by Telecommunication Providers / Voice Carriers to manage 1000's of Office 365 SIP Trunks with a simple deployment.
+- Derived Trunk: This INI can be used by Telecommunication Providers / Voice Carriers to manage 1000's of Office 365 SIP Trunks with a simple deployment.
 
 The .INI files contain the basics for configuring the AudioCodes Session Border Controller for Microsoft Teams Direct Routing. Download the .INI and edit the following changes:
 
 - Standard Trunk Configuration: Replace **SBC01.TEAMS.CONTOSO.COM** & **SBC02.TEAMS.CONTOSO.COM** with your registered Public DNS A Record for each Customer you are onboarding.
-
 - Derived Trunk Configuration: Replace **SBC01.TEAMS.CONTOSO.COM** & **SBC02.TEAMS.CONTOSO.COM** with your registered Public DNS A Record for each Customer you are onboarding & replace **TEAMS.CONTOSO.COM** with your Carrier registered Public DNS A Record.
 
 - Replace the **DIALPLAN RULE** section to align with your Numbering scheme
