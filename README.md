@@ -27,7 +27,11 @@ This repo contains 2 .INI files
 
 The .INI files contain the basics for configuring the AudioCodes Session Border Controller for Microsoft Teams Direct Routing. Download the .INI and edit the following changes:
 
-- Replace **SBC01.TEAMS.CONTOSO.COM** & **SBC02.TEAMS.CONTOSO.COM** with your registered Public DNS A Record
+- Standard Trunk Configuration: Replace **SBC01.TEAMS.CONTOSO.COM** & **SBC02.TEAMS.CONTOSO.COM** with your registered Public DNS A Record for each Customer you are onboarding.
+
+- Derived Trunk Configuration: Replace **SBC01.TEAMS.CONTOSO.COM** & **SBC02.TEAMS.CONTOSO.COM** with your registered Public DNS A Record for each Customer you are onboarding & replace **TEAMS.CONTOSO.COM** with your Carrier registered Public DNS A Record.
+
+- Replace the **DIALPLAN RULE** section to align with your Numbering scheme
 
 - Replace **SIP.TRUNK.IP.HERE** with the routable IP address of your SIP Trunk Provider
 
