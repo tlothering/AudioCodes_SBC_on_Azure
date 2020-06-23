@@ -41,6 +41,6 @@ The .INI files contain the basics for configuring the AudioCodes Session Border 
 ### Post Deployment Actions
 
 - Import you Public SSL Certificate, Trusted Root & Intermediate Certification Authorities for your Certificate and the Baltimore Certificate
-- Configure Office 365 Tenant - [Connect your Session Border Controller (SBC) to Direct Routing](https://docs.microsoft.com/en-us/MicrosoftTeams/direct-routing-connect-the-sbc) for detailed deployment information
+- Configure Office 365 Tenant - [Connect your Session Border Controller (SBC) to Direct Routing](https://docs.microsoft.com/en-us/MicrosoftTeams/direct-routing-connect-the-sbc)
 - Configure Voice Routing Policies and Dial Plans [Configure voice routing for Direct Routing](https://docs.microsoft.com/en-us/MicrosoftTeams/direct-routing-voice-routing)
 - Enable a User for Teams Direct Routing - [Enable users for Direct Routing, voice, and voicemail](https://docs.microsoft.com/en-us/MicrosoftTeams/direct-routing-enable-users)
