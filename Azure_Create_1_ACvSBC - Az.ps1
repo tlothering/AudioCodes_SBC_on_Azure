@@ -44,7 +44,7 @@
     $PublicIPName11 = $VMName1 + "-PIP-TEAMS"
     $PublicIPName12 = $VMName1 + "-PIP-PSTN"
     $Location = "SouthAfricaNorth"
-    $VMSize = "Standard_B2s"
+    $VMSize = "Standard_F2s_v2"
     $AdminUsername = "acadmin"
     $AdminPassword = "DirectRouting123!@#"
 
