@@ -105,7 +105,7 @@ Start-Sleep -s 3
     $PSTNRule1 = New-AzNetworkSecurityRuleConfig -Name SIP_Trunk -Description "SIP Trunk Port" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 5060
     $PSTNRule2 = New-AzNetworkSecurityRuleConfig -Name SIP_Media -Description "SIP Trunk Media Ports" -Access Allow -Protocol * -Direction Inbound -Priority 101 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 6000-6999
     $PSTNRule3 = New-AzNetworkSecurityRuleConfig -Name HTTP_Management -Description "HTTP Management of AudioCodes VE SBC" -Access Allow -Protocol Tcp -Direction Inbound -Priority 200 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 80,443
-    $NSGPSTN = New-AzNetworkSecurityGroup -Name $NSG2 -ResourceGroupName $ResourceGroupName -Location $Location -SecurityRules $PSTNRule1,$PSTNRule2.$PSTNRule3
+    $NSGPSTN = New-AzNetworkSecurityGroup -Name $NSG2 -ResourceGroupName $ResourceGroupName -Location $Location -SecurityRules $PSTNRule1,$PSTNRule2,$PSTNRule3
 
 Start-Sleep -s 3
 
