@@ -1,5 +1,5 @@
 # Deploy an AudioCodes Session Border Controller on Azure
-Deployment repo for AudioCodes SBC deployed on Microsoft Azure
+Deployment repo for AudioCodes SBC Proof of Concept deployed on Microsoft Azure. These files are intended for testing and lab purposes only and are not ready to Production.
 
 Refer to [Phone System and Direct Routing](https://docs.microsoft.com/en-us/MicrosoftTeams/direct-routing-landing-page) for detailed deployment information.
 
