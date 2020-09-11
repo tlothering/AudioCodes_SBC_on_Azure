@@ -99,11 +99,11 @@ Start-Sleep -s 3
 
 # Create Network Security Groups for Teams & PSTN Interfaces
     $Teamsrule1 = New-AzNetworkSecurityRuleConfig -Name O365_SIP_Signalling -Description "O365 SIP Signalling Port" -Access Allow -Protocol * -Direction Inbound -Priority 100 -SourceAddressPrefix 52.114.148.0/32,52.114.132.46/32,52.114.75.24/32,52.114.76.76/32,52.114.7.24/32,52.114.14.70/32 -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 5061
-    $TeamsRule2 = New-AzNetworkSecurityRuleConfig -Name Media_Ports -Description "Media Ports" -Access Allow -Protocol Udp -Direction Inbound -Priority 101 -SourceAddressPrefix 52.112.0.0/14,52.120.0.0/14 -SourcePortRange 3478-3481,49152-53247 -DestinationAddressPrefix * -DestinationPortRange 6000-6399
+    $TeamsRule2 = New-AzNetworkSecurityRuleConfig -Name Media_Ports -Description "Media Ports" -Access Allow -Protocol Udp -Direction Inbound -Priority 101 -SourceAddressPrefix 52.112.0.0/14,52.120.0.0/14 -SourcePortRange 3478-3481,49152-53247 -DestinationAddressPrefix * -DestinationPortRange 6000-6499
     $NSGTeams = New-AzNetworkSecurityGroup -Name $NSG1 -ResourceGroupName $ResourceGroupName -Location $Location -SecurityRules $TeamsRule1,$TeamsRule2
 	
     $PSTNRule1 = New-AzNetworkSecurityRuleConfig -Name SIP_Trunk -Description "SIP Trunk Port" -Access Allow -Protocol Tcp -Direction Inbound -Priority 100 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 5060
-    $PSTNRule2 = New-AzNetworkSecurityRuleConfig -Name SIP_Media -Description "SIP Trunk Media Ports" -Access Allow -Protocol * -Direction Inbound -Priority 101 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 7000-7399
+    $PSTNRule2 = New-AzNetworkSecurityRuleConfig -Name SIP_Media -Description "SIP Trunk Media Ports" -Access Allow -Protocol * -Direction Inbound -Priority 101 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 7000-7499
     $PSTNRule3 = New-AzNetworkSecurityRuleConfig -Name HTTP_Management -Description "HTTP Management of AudioCodes VE SBC" -Access Allow -Protocol Tcp -Direction Inbound -Priority 200 -SourceAddressPrefix Internet -SourcePortRange * -DestinationAddressPrefix * -DestinationPortRange 80,443
     $NSGPSTN = New-AzNetworkSecurityGroup -Name $NSG2 -ResourceGroupName $ResourceGroupName -Location $Location -SecurityRules $PSTNRule1,$PSTNRule2,$PSTNRule3
 
