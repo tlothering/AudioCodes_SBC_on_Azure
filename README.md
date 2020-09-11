@@ -23,7 +23,6 @@ Install the **AZ** PowerShell module before using this script;
 
 This repo contains 2 .INI files:
 - ***Standard Trunk for Single Tenant***: This INI can be used when you have a single Office 365 tenant.
-- ***Standard Trunk for Multi-Tenant***: This INI can be used when you have multiple Tenants. You can dedicate a SIP Port, manage Media Bypass settings per Tenant or have more granular control of every Office 365 tenant.
 - ***Derived Trunk for Carriers***: This INI can be used by Telecommunication Providers / Voice Carriers to manage 1000's of Office 365 SIP Trunks with a simple deployment.
 
 The .INI files contain the basics for configuring the AudioCodes Session Border Controller for Microsoft Teams Direct Routing. Download the applicable .INI and edit the following changes:
