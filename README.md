@@ -27,7 +27,7 @@ This repo contains 2 .INI files:
 
 The .INI files contain the basics for configuring the AudioCodes Session Border Controller for Microsoft Teams Direct Routing. Download the applicable .INI and edit the following changes:
 
-- ***Standard Trunk Configurations:*** Replace ***SBC01.TEAMS.CONTOSO.COM*** / ***SBC02.TEAMS.CONTOSO.COM*** / ***SBC03.TEAMS.CONTOSO.COM*** with your registered Public DNS A Record for each Customer you are onboarding. In a Single Tenant SBC, you can remove SBC02.TEAMS.CONTOSO.COM / SBC03.TEAMS.CONTOSO.COM.
+- ***Standard Trunk Configuration:*** Replace ***SBC01.TEAMS.CONTOSO.COM*** with your registered Public DNS A Record for the Session Border Controller.
 - ***Derived Trunk Configuration:*** Replace ***SBC01.TEAMS.CONTOSO.COM*** & ***SBC02.TEAMS.CONTOSO.COM*** with your registered Public DNS A Record for each Customer you are onboarding & replace ***TEAMS.CONTOSO.COM*** with your Carrier registered Public DNS A Record.
 
 - Replace the ***DIALPLAN RULE*** section to align with your Numbering scheme
@@ -38,6 +38,7 @@ The .INI files contain the basics for configuring the AudioCodes Session Border 
 
 - Import you Public SSL Certificate, Trusted Root & Intermediate Certification Authorities for your Certificate and the Baltimore Certificate
 - Configure your PSTN SIP Trunk. A placeholder has been provided but will require additional configuration dependant on the settings provided by the SIP Trunk Provider.
+- Configure the "NAT Translation" rules to the Public IP addresses assigned to the SBC.
 - Configure Office 365 Tenant - [Connect your Session Border Controller (SBC) to Direct Routing](https://docs.microsoft.com/en-us/MicrosoftTeams/direct-routing-connect-the-sbc)
 - Configure Voice Routing Policies and Dial Plans [Configure voice routing for Direct Routing](https://docs.microsoft.com/en-us/MicrosoftTeams/direct-routing-voice-routing)
 - Enable a User for Teams Direct Routing - [Enable users for Direct Routing, voice, and voicemail](https://docs.microsoft.com/en-us/MicrosoftTeams/direct-routing-enable-users)
